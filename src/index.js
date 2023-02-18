@@ -64,7 +64,7 @@ function createMarkupOneCountry(infoCountry) {
             <h1><img src="${country.flags.svg}" width="70" alt="${country.name}"> ${country.name}</h1>
             <h4>Capital: ${country.capital}</h4>
             <h4>Population: ${country.population}</h4>
-            <h4>Languages: ${country.languages}</h4>
+            <h4>Languages: ${country.languages.map(lang => lang.name)}</h4>
         </li>`
     ).join('');
 
